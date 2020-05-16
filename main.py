@@ -60,7 +60,8 @@ def get_shelf_by_doc_no(dirs):
 def get_check_name(docs):
   for doc in docs:
     try:
-      print(f"{doc.get('name')}")
+      print(doc["name"])
+      # print(f"{doc.values[name]}")
     except KeyError:
       print(f"name отсутствует в документе")
    
